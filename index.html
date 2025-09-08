@@ -169,7 +169,8 @@
         </div>
     </section>
     <!-- Premium Brands Section -->
-<div class="bg-[#f9fbfd] rounded-t-[2.5rem] py-16 px-6 md:px-12 -mt-7 relative z-20" style="height: 80vh;">
+<!-- Premium Brands Section -->
+<div class="bg-[#f9fbfd] rounded-t-[2.5rem] py-16 px-6 md:px-12 -mt-7 relative z-20">
   <div class="max-w-8xl mx-auto">
 
     <!-- Header -->
@@ -178,72 +179,128 @@
         Explore Our Premium Brands
       </h2>
       <a href="#" class="text-sm md:text-base text-gray-500 hover:text-blue-600 flex items-center gap-2 transition group">
-  Show All
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M9 5h10v10" />
-  </svg>
-</a>
-
+        Show All
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M9 5h10v10" />
+        </svg>
+      </a>
     </div>
 
-    <!-- Grid -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-      
-      <!-- Brand Item -->
-      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
-        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b1.jpg"  alt="Audi">
-        <p class="text-md font-semibold text-gray-800  transition">Audi</p>
+    <!-- Mobile Swiper -->
+    <div class="md:hidden relative">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide grid grid-cols-2 gap-4">
+            <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+              <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b1.jpg" alt="Audi">
+              <p class="text-md font-semibold text-gray-800">Audi</p>
+            </div>
+            <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+              <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b2.jpg" alt="BMW">
+              <p class="text-md font-semibold text-gray-800">BMW</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide grid grid-cols-2 gap-4">
+            <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+              <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b3.jpg" alt="Ford">
+              <p class="text-md font-semibold text-gray-800">Ford</p>
+            </div>
+            <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+              <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b4.jpg" alt="Mercedes Benz">
+              <p class="text-md font-semibold text-gray-800">Mercedes Benz</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide grid grid-cols-2 gap-4">
+            <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+              <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b5.jpg" alt="Peugeot">
+              <p class="text-md font-semibold text-gray-800">Peugeot</p>
+            </div>
+            <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+              <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b6.jpg" alt="Volkswagen">
+              <p class="text-md font-semibold text-gray-800">Volkswagen</p>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
-        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b2.jpg"  alt="BMW">
-        <p class="text-md font-semibold text-gray-800  transition">BMW</p>
+      <!-- Custom Arrows -->
+      <div class="absolute inset-y-0 flex items-center justify-between w-full px-2">
+        <button class="swiper-button-prev bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-md p-3 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="swiper-button-next bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-md p-3 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
-
-      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
-        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b3.jpg"  alt="Ford">
-        <p class="text-md font-semibold text-gray-800  transition">Ford</p>
-      </div>
-
-      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
-  <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b4.jpg" alt="Mercedes Benz">
-  <p class="text-md font-semibold text-gray-800 transition">Mercedes Benz</p>
-</div>
-
-
-      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
-        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b5.jpg"  alt="Peugeot">
-        <p class="text-md font-semibold text-gray-800  transition">Peugeot</p>
-      </div>
-
-      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
-        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b6.jpg"  alt="Volkswagen">
-        <p class="text-md font-semibold text-gray-800  transition">Volkswagen</p>
-      </div>
-
     </div>
+
+    <!-- Desktop Grid -->
+    <div class="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b1.jpg" alt="Audi">
+        <p class="text-md font-semibold text-gray-800">Audi</p>
+      </div>
+      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b2.jpg" alt="BMW">
+        <p class="text-md font-semibold text-gray-800">BMW</p>
+      </div>
+      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b3.jpg" alt="Ford">
+        <p class="text-md font-semibold text-gray-800">Ford</p>
+      </div>
+      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b4.jpg" alt="Mercedes Benz">
+        <p class="text-md font-semibold text-gray-800">Mercedes Benz</p>
+      </div>
+      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b5.jpg" alt="Peugeot">
+        <p class="text-md font-semibold text-gray-800">Peugeot</p>
+      </div>
+      <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-blue-600 p-6 transition">
+        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b6.jpg" alt="Volkswagen">
+        <p class="text-md font-semibold text-gray-800">Volkswagen</p>
+      </div>
+    </div>
+
   </div>
 </div>
+
+
 
 
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-        const swiper = new Swiper('.swiper', {
-        slidesPerView: 2,
-        spaceBetween: 16,
-        pagination: { el: '.swiper-pagination', clickable: true },
-        });
+  <script>
+  AOS.init({ duration: 1000, once: true });
 
-        // Mobile nav toggle
-        const toggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        toggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+  // Mobile nav toggle
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  toggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+ const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
     </body>
     </html>
