@@ -139,14 +139,15 @@
             <h1 class="text-4xl md:text-7xl font-semibold mb-6">Find Your Perfect Car</h1>
 
             <!-- Tabs -->
-            <div class="flex justify-center space-x-6 mb-6 text-lg" data-aos="fade-up" data-aos-delay="500">
-                <button class="border-b-2 border-white pb-1">All</button>
-                <button class="hover:text-gray-300">New</button>
-                <button class="hover:text-gray-300">Used</button>
-            </div>
+           <div class="flex justify-center space-x-6 mb-6 text-lg" 
+              data-aos="fade-up" data-aos-delay="500" id="tabs">
+              <button class="tab-btn border-b-2 border-white">All</button>
+              <button class="tab-btn hover:text-gray-300">New</button>
+              <button class="tab-btn hover:text-gray-300">Used</button>
+          </div>
 
             <!-- Search -->
-        <div class="bg-white shadow-lg flex flex-col md:flex-row max-w-6xl mx-auto overflow-hidden 
+        <!-- <div class="bg-white shadow-lg flex flex-col md:flex-row max-w-6xl mx-auto overflow-hidden 
                     rounded-2xl md:rounded-full px-2 md:px-3 py-1 md:py-2"
             data-aos="fade-up" data-aos-delay="700">
 
@@ -174,9 +175,9 @@
             </svg>
             Search Cars
         </button>
-        </div>
+        </div> -->
 
-        <div class="flex flex-wrap justify-center gap-4 mt-8 text-white"  data-aos="fade-up" data-aos-delay="900">
+        <div class="flex flex-wrap justify-center gap-4 mt-8 text-white"  data-aos="fade-up" data-aos-delay="00">
 
         <!-- SUV -->
         <button class="flex items-center gap-2 bg-white/20 backdrop-blur-md 
@@ -811,6 +812,7 @@
     const mobileMenu = document.getElementById('mobile-menu');
     const langToggle = document.getElementById("lang-toggle");
     const langMenu = document.getElementById("lang-menu");
+    const tabs = document.querySelectorAll('#tabs .tab-btn');
     toggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
     });
@@ -824,7 +826,15 @@
       langMenu.classList.add("hidden");
     }
   });
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // sabse pehle sab buttons se active class hatao
+      tabs.forEach(b => b.classList.remove('border-b-2','border-white','font-semibold'));
 
+      // ab jispe click hua usko active style do
+      btn.classList.add('border-b-2','border-white','font-semibold');
+    });
+  });
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 16,
