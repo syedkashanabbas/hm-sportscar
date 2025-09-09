@@ -117,23 +117,6 @@
   </div>
 </div>
 
-<script>
-  // Mobile language dropdown toggle
-  const langToggle = document.getElementById("lang-toggle");
-  const langMenu = document.getElementById("lang-menu");
-
-  langToggle.addEventListener("click", () => {
-    langMenu.classList.toggle("hidden");
-  });
-
-  // Close menu if clicked outside
-  document.addEventListener("click", (e) => {
-    if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
-      langMenu.classList.add("hidden");
-    }
-  });
-</script>
-
     </header>
 
     <!-- Hero -->
@@ -453,153 +436,153 @@
     </div>
     </section>
     <hr>
-<section class="why-buy-from-us bg-gray-50 py-16 px-6 md:px-12">
-  <div class="max-w-7xl mx-auto text-center">
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-      Why Buy From Us
-    </h2>
+    <section class="why-buy-from-us bg-gray-50 py-16 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto text-center">
+        <!-- Heading -->
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+        Why Buy From Us
+        </h2>
 
-    <!-- Features Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-      
-      <!-- Locally Owned -->
-      <div class="flex flex-col items-center text-center p-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6" />
-        </svg>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Locally Owned</h3>
-        <p class="text-gray-600 text-sm">We’re part of your community with trusted local ownership.</p>
-      </div>
-
-      <!-- Nationwide Delivery -->
-      <div class="flex flex-col items-center text-center p-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h13l-4 6H9zm0 0v4m0-4H5a2 2 0 01-2-2V7a2 2 0 012-2h4v12z" />
-        </svg>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Nationwide Delivery</h3>
-        <p class="text-gray-600 text-sm">Get your car delivered anywhere across the country safely.</p>
-      </div>
-
-      <!-- Certified Cars -->
-      <div class="flex flex-col items-center text-center p-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Certified Cars</h3>
-        <p class="text-gray-600 text-sm">All cars go through strict inspections for guaranteed quality.</p>
-      </div>
-
-      <!-- Free Test Drive -->
-      <div class="flex flex-col items-center text-center p-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13h18M5 10l1-2h12l1 2M6 19a2 2 0 104 0 2 2 0 00-4 0zm8 0a2 2 0 104 0 2 2 0 00-4 0z" />
-        </svg>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Free Test Drive</h3>
-        <p class="text-gray-600 text-sm">Experience the car before buying, with no hidden conditions.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section style="height: 80vh;" class="bg-gray-50 py-20 px-6 md:px-12">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-    <!-- Left Content -->
-    <div>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-        Explore Our Premium <br> Brands
-      </h2>
-      <p class="text-gray-600 mb-6">
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
-      </p>
-      <a href="#"
-         class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
-        Show All Brands
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-
-    <!-- Right Circular Layout -->
-    <div class="flex justify-center items-center relative">
-      <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/09/logo-brand.png"
-           alt="Brand Logos Circle"
-           class="w-full max-w-lg">
-      
-    </div>
-
-  </div>
-</section>
-
-<section class="bg-white py-16 px-6 md:px-12 rounded-b-[4rem]">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-    <!-- Left Images -->
-    <div class="grid grid-cols-2 grid-rows-2 gap-6">
-      <!-- Top Left Square -->
-      <img src="https://picsum.photos/400/400?random=1" 
-           alt="Car" 
-           class="rounded-2xl object-cover w-full h-full row-span-1 col-span-1">
-
-      <!-- Vertical Rectangle -->
-      <img src="https://picsum.photos/500/700?random=2" 
-           alt="Car" 
-           class="rounded-2xl object-cover w-full h-full row-span-2 col-span-1">
-
-      <!-- Bottom Left Square -->
-      <img src="https://picsum.photos/400/400?random=3" 
-           alt="Car" 
-           class="rounded-2xl object-cover w-full h-full row-span-1 col-span-1">
-    </div>
-
-    <!-- Right Content -->
-    <div>
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-        Get A Fair Price For Your Car <br> Sell To Us Today
-      </h2>
-      <p class="text-gray-600 mb-6">
-        We are committed to providing our customers with exceptional service, competitive pricing, and a wide range of options.
-      </p>
-
-      <ul class="space-y-4 mb-8">
-        <li class="flex items-start gap-3">
-          <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        
+        <!-- Locally Owned -->
+        <div class="flex flex-col items-center text-center p-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6" />
             </svg>
-          </span>
-          <p class="text-gray-700">We are the UK's largest provider, with more patrols in more places</p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <p class="text-gray-700">You get 24/7 roadside assistance</p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <p class="text-gray-700">We fix 4 out of 5 cars at the roadside</p>
-        </li>
-      </ul>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Locally Owned</h3>
+            <p class="text-gray-600 text-sm">We’re part of your community with trusted local ownership.</p>
+        </div>
 
-      <a href="#"
-         class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
-        Get Started
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
+        <!-- Nationwide Delivery -->
+        <div class="flex flex-col items-center text-center p-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h13l-4 6H9zm0 0v4m0-4H5a2 2 0 01-2-2V7a2 2 0 012-2h4v12z" />
+            </svg>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Nationwide Delivery</h3>
+            <p class="text-gray-600 text-sm">Get your car delivered anywhere across the country safely.</p>
+        </div>
+
+        <!-- Certified Cars -->
+        <div class="flex flex-col items-center text-center p-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Certified Cars</h3>
+            <p class="text-gray-600 text-sm">All cars go through strict inspections for guaranteed quality.</p>
+        </div>
+
+        <!-- Free Test Drive -->
+        <div class="flex flex-col items-center text-center p-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13h18M5 10l1-2h12l1 2M6 19a2 2 0 104 0 2 2 0 00-4 0zm8 0a2 2 0 104 0 2 2 0 00-4 0z" />
+            </svg>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Free Test Drive</h3>
+            <p class="text-gray-600 text-sm">Experience the car before buying, with no hidden conditions.</p>
+        </div>
+
+        </div>
     </div>
-  </div>
-</section>
+    </section>
+    <section style="height: 80vh;" class="bg-gray-50 py-20 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- Left Content -->
+        <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Explore Our Premium <br> Brands
+        </h2>
+        <p class="text-gray-600 mb-6">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
+        </p>
+        <a href="#"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
+            Show All Brands
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+        </div>
+
+        <!-- Right Circular Layout -->
+        <div class="flex justify-center items-center relative">
+        <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/09/logo-brand.png"
+            alt="Brand Logos Circle"
+            class="w-full max-w-lg">
+        
+        </div>
+
+    </div>
+    </section>
+
+    <section class="bg-white py-16 px-6 md:px-12 rounded-b-[4rem]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- Left Images -->
+        <div class="grid grid-cols-2 grid-rows-2 gap-6">
+        <!-- Top Left Square -->
+        <img src="https://picsum.photos/400/400?random=1" 
+            alt="Car" 
+            class="rounded-2xl object-cover w-full h-full row-span-1 col-span-1">
+
+        <!-- Vertical Rectangle -->
+        <img src="https://picsum.photos/500/700?random=2" 
+            alt="Car" 
+            class="rounded-2xl object-cover w-full h-full row-span-2 col-span-1">
+
+        <!-- Bottom Left Square -->
+        <img src="https://picsum.photos/400/400?random=3" 
+            alt="Car" 
+            class="rounded-2xl object-cover w-full h-full row-span-1 col-span-1">
+        </div>
+
+        <!-- Right Content -->
+        <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Get A Fair Price For Your Car <br> Sell To Us Today
+        </h2>
+        <p class="text-gray-600 mb-6">
+            We are committed to providing our customers with exceptional service, competitive pricing, and a wide range of options.
+        </p>
+
+        <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+            <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </span>
+            <p class="text-gray-700">We are the UK's largest provider, with more patrols in more places</p>
+            </li>
+            <li class="flex items-start gap-3">
+            <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </span>
+            <p class="text-gray-700">You get 24/7 roadside assistance</p>
+            </li>
+            <li class="flex items-start gap-3">
+            <span class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </span>
+            <p class="text-gray-700">We fix 4 out of 5 cars at the roadside</p>
+            </li>
+        </ul>
+
+        <a href="#"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition">
+            Get Started
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+        </div>
+    </div>
+    </section>
 
     <!-- <section class="latest-blogs bg-white py-16 px-6 md:px-12 rounded-b-[4rem] ">
     <div class="max-w-7xl mx-auto">
@@ -764,7 +747,7 @@
     </div>
 
   </div>
-</footer>
+    </footer>
 
 
     <!-- Scripts -->
@@ -774,12 +757,28 @@
     <script>
     AOS.init({ duration: 1000, once: true });
 
+      // Mobile language dropdown toggle
+
+
+ 
     // Mobile nav toggle
     const toggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const langToggle = document.getElementById("lang-toggle");
+    const langMenu = document.getElementById("lang-menu");
     toggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
     });
+     langToggle.addEventListener("click", () => {
+    langMenu.classList.toggle("hidden");
+  });
+
+  // Close menu if clicked outside
+  document.addEventListener("click", (e) => {
+    if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
+      langMenu.classList.add("hidden");
+    }
+  });
 
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
