@@ -121,6 +121,43 @@ function stopAutoScroll() {
 cardsContainer.addEventListener("mouseenter", stopAutoScroll);
 cardsContainer.addEventListener("mouseleave", startAutoScroll);
 
+// Drag-to-scroll
+let isDown = false;
+let startX;
+let scrollLeft;
+
+cardsContainer.addEventListener("mousedown", (e) => {
+  isDown = true;
+  stopAutoScroll(); // stop auto scroll while dragging
+  startX = e.pageX - cardsContainer.offsetLeft;
+  scrollLeft = cardsContainer.scrollLeft;
+  cardsContainer.classList.add("cursor-grabbing");
+});
+
+cardsContainer.addEventListener("mouseleave", () => {
+  if (isDown) {
+    isDown = false;
+    cardsContainer.classList.remove("cursor-grabbing");
+    startAutoScroll(); // resume auto scroll
+  }
+});
+
+cardsContainer.addEventListener("mouseup", () => {
+  if (isDown) {
+    isDown = false;
+    cardsContainer.classList.remove("cursor-grabbing");
+    startAutoScroll(); // resume auto scroll
+  }
+});
+
+cardsContainer.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - cardsContainer.offsetLeft;
+  const walk = (x - startX) * 2; // drag speed
+  cardsContainer.scrollLeft = scrollLeft - walk;
+});
+
 // Init
 renderCards(activeTab);
 startAutoScroll();
