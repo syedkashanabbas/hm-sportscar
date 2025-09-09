@@ -49,6 +49,17 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;     /* Firefox */
         }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;     /* Firefox */
+        }
+
 
     </style>
     <!-- Navbar -->
@@ -515,6 +526,39 @@
 
     </div>
     </section>
+<section class="bg-white py-16 px-6 md:px-12">
+  <div class="max-w-8xl mx-auto">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What our customers say</h2>
+      <p class="text-gray-600 text-sm md:text-base">
+        Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews
+      </p>
+    </div>
+
+    <!-- Slider Container -->
+    <div class="relative">
+      <!-- Cards Wrapper -->
+      <div id="testimonial-wrapper" class="flex space-x-6 overflow-x-auto scroll-smooth pb-4 scrollbar-hide">
+        <!-- JS will inject testimonial cards here -->
+      </div>
+
+      <!-- Controls -->
+      <div class="flex justify-center gap-4 mt-6">
+        <button id="prev-btn" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="next-btn" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="bg-white py-16 px-6 md:px-12 rounded-b-[4rem]">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -754,6 +798,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/vehicles.js"></script>
+    <script src="./assets/testimonials.js"></script>
     <script>
     AOS.init({ duration: 1000, once: true });
 
