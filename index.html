@@ -528,7 +528,7 @@
     </div>
     </section>
 <section class="bg-white py-16 px-6 md:px-12">
-  <div class="max-w-8xl mx-auto">
+  <div class="max-w-7xl mx-auto">
     <!-- Header -->
     <div class="flex items-center justify-between mb-8">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What our customers say</h2>
@@ -560,6 +560,141 @@
     </div>
   </div>
 </section>
+
+<section class="bg-white py-16 px-6 md:px-12 flex items-center rounded-b-[4rem]">
+  <div class="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+    <!-- Left Form Section -->
+    <div>
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Didn’t Find Your Car?</h2>
+      <p class="text-gray-600 mb-8">
+        Fill in your requirements below and our team will contact you with the best match for your dream car.
+      </p>
+
+      <form id="carForm" class="space-y-6">
+        <!-- Name -->
+        <input type="text" name="name" placeholder="Name*" required
+               class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+
+        <!-- Email -->
+        <input type="email" name="email" placeholder="Email*" required
+               class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+
+        <!-- Number -->
+        <input type="text" name="number" placeholder="Phone Number*" required
+               class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+
+        <!-- Car Details -->
+        <textarea name="details" rows="3" placeholder="Car Details"
+                  class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+
+        <!-- Budget + Checkbox -->
+        <div>
+          <input type="number" id="budget" name="budget" placeholder="Budget ($)"
+                 class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+          <div class="mt-2 flex items-center space-x-2">
+            <input type="checkbox" id="under100k" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+            <label for="under100k" class="text-gray-700">Under $100k</label>
+          </div>
+        </div>
+
+        <!-- Notes -->
+        <textarea name="notes" rows="3" placeholder="Notes"
+                  class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+
+        <!-- Captcha -->
+        <div>
+          <label for="captcha" class="block text-sm font-medium text-gray-700 mb-1">Captcha</label>
+          <input type="text" id="captcha" placeholder="Enter Captcha Code"
+                 class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+
+        <!-- Submit -->
+        <button type="submit"
+                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+          Submit Requirements
+        </button>
+      </form>
+    </div>
+
+<!-- Right Contact Info -->
+<div class="rounded-xl p-8">
+  <h3 class="text-xl font-semibold text-gray-800 mb-4">Didn’t find your car?</h3>
+  <p class="text-gray-600 mb-6">
+    If you couldn’t find the car you were looking for, fill out this form with your required car details and our team will get in touch with you.
+  </p>
+
+  <ul class="space-y-4 text-gray-700 mb-8">
+    <li><span class="font-medium">Address:</span><br> 123 Queensberry Street, North Melbourne VIC3051, Australia.</li>
+    <li><span class="font-medium">Email:</span><br> info@hmsportscars.com</li>
+    <li><span class="font-medium">Phone:</span><br> +76 956 123 456</li>
+  </ul>
+
+  <!-- Social Icons -->
+  <div>
+    <p class="text-gray-700 font-medium mb-3">Follow us</p>
+    <div class="flex space-x-4 text-gray-600">
+
+      <!-- Facebook -->
+      <a href="#" class="hover:text-blue-600 transition" aria-label="Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+             class="w-6 h-6">
+          <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0 1 14 6h3v3h-3c-.3 0-.5.2-.5.5V12H17l-.5 3h-2.5v7A10 10 0 0 0 22 12z"/>
+        </svg>
+      </a>
+
+      <!-- Twitter -->
+      <a href="#" class="hover:text-blue-400 transition" aria-label="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+             class="w-6 h-6">
+          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9.18 9.18 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2-4.52 4.52 0 .35.04.7.11 1.03A12.82 12.82 0 0 1 3.15 1.67a4.49 4.49 0 0 0-.61 2.27c0 1.57.8 2.95 2.02 3.76a4.52 4.52 0 0 1-2.05-.56v.06c0 2.2 1.57 4.04 3.64 4.46a4.52 4.52 0 0 1-2.04.08c.57 1.78 2.23 3.07 4.2 3.1A9.05 9.05 0 0 1 2 19.54a12.77 12.77 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.41-.01-.61A9.2 9.2 0 0 0 23 3z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="#" class="hover:text-pink-500 transition" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+             class="w-6 h-6">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="#" class="hover:text-blue-700 transition" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+             class="w-6 h-6">
+          <path d="M20.45 20.45h-3.55v-5.4c0-1.29-.02-2.96-1.8-2.96-1.8 0-2.07 1.4-2.07 2.85v5.51h-3.55V9h3.41v1.56h.05c.48-.9 1.65-1.85 3.39-1.85 3.62 0 4.29 2.38 4.29 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<script>
+  // Checkbox logic for Budget disable
+  const under100k = document.getElementById('under100k');
+  const budget = document.getElementById('budget');
+
+  under100k.addEventListener('change', () => {
+    if (under100k.checked) {
+      budget.value = '';
+      budget.disabled = true;
+      budget.classList.add("bg-gray-100", "cursor-not-allowed");
+    } else {
+      budget.disabled = false;
+      budget.classList.remove("bg-gray-100", "cursor-not-allowed");
+    }
+  });
+
+  // Demo form submit
+  document.getElementById('carForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Form submitted successfully!');
+  });
+</script>
 
 
 
