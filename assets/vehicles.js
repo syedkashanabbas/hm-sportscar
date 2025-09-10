@@ -54,7 +54,7 @@ function renderCards(tab) {
     card.innerHTML = `
       <div class="relative">
         <img src="${car.images[0]}" class="w-full h-48 object-cover car-img" data-images='${JSON.stringify(car.images)}'>
-        <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">${car.badge}</span>
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-medium px-3 py-1 rounded-full">${car.badge}</span>
       </div>
       <div class="p-5">
         <h3 class="text-lg font-semibold text-gray-900">${car.title}</h3>
@@ -64,7 +64,7 @@ function renderCards(tab) {
         </div>
         <div class="flex items-center justify-between">
           <span class="text-lg font-bold text-gray-900">${car.price}</span>
-          <a href="#" class="text-blue-600 text-sm font-medium flex items-center gap-1 hover:underline">
+          <a href="#" class="text-red-600 text-sm font-medium flex items-center gap-1 hover:underline">
             View Details
             <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
