@@ -139,12 +139,12 @@
             <h1 class="text-4xl md:text-7xl font-semibold mb-6">Find Your Perfect Car</h1>
 
             <!-- Tabs -->
-           <div class="flex justify-center space-x-6 mb-6 text-lg" 
+           <!-- <div class="flex justify-center space-x-6 mb-6 text-lg" 
               data-aos="fade-up" data-aos-delay="500" id="tabs">
               <button class="tab-btn border-b-2 border-white">All</button>
               <button class="tab-btn hover:text-gray-300">New</button>
               <button class="tab-btn hover:text-gray-300">Used</button>
-          </div>
+          </div> -->
 
             <!-- Search -->
         <!-- <div class="bg-white shadow-lg flex flex-col md:flex-row max-w-6xl mx-auto overflow-hidden 
@@ -592,10 +592,7 @@
         <div>
           <input type="number" id="budget" name="budget" placeholder="Budget ($)"
                  class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
-          <div class="mt-2 flex items-center space-x-2">
-            <input type="checkbox" id="under100k" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
-            <label for="under100k" class="text-gray-700">Under $100k</label>
-          </div>
+        
         </div>
 
         <!-- Notes -->
@@ -666,28 +663,7 @@
   </div>
 </section>
 
-<script>
-  // Checkbox logic for Budget disable
-  const under100k = document.getElementById('under100k');
-  const budget = document.getElementById('budget');
 
-  under100k.addEventListener('change', () => {
-    if (under100k.checked) {
-      budget.value = '';
-      budget.disabled = true;
-      budget.classList.add("bg-gray-100", "cursor-not-allowed");
-    } else {
-      budget.disabled = false;
-      budget.classList.remove("bg-gray-100", "cursor-not-allowed");
-    }
-  });
-
-  // Demo form submit
-  document.getElementById('carForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    alert('Form submitted successfully!');
-  });
-</script>
 
 
 
@@ -874,7 +850,7 @@
     const mobileMenu = document.getElementById('mobile-menu');
     const langToggle = document.getElementById("lang-toggle");
     const langMenu = document.getElementById("lang-menu");
-    const tabs = document.querySelectorAll('#tabs .tab-btn');
+
     toggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
     });
@@ -888,15 +864,7 @@
       langMenu.classList.add("hidden");
     }
   });
-  tabs.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // sabse pehle sab buttons se active class hatao
-      tabs.forEach(b => b.classList.remove('border-b-2','border-white','font-semibold'));
 
-      // ab jispe click hua usko active style do
-      btn.classList.add('border-b-2','border-white','font-semibold');
-    });
-  });
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 16,
