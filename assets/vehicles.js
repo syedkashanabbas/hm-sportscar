@@ -14,20 +14,21 @@ function generateCars(count, type) {
     const price = "$" + (20000 + Math.floor(Math.random() * 80000)).toLocaleString();
     const miles = `${Math.floor(Math.random() * 50000)} Miles`;
 
-    cars.push({
-      title: `${model} – ${2020 + Math.floor(Math.random() * 5)}`,
-      subtitle: `${tran} ${fuel} Edition`,
-      price,
-      miles,
-      fuel,
-      trans: tran,
-      badge,
-      images: [
-        `https://picsum.photos/400/250?random=${Math.floor(Math.random() * 1000)}`,
-        `https://picsum.photos/400/250?random=${Math.floor(Math.random() * 1000)}`,
-        `https://picsum.photos/400/250?random=${Math.floor(Math.random() * 1000)}`
-      ]
-    });
+  cars.push({
+  title: `${model} – ${2020 + Math.floor(Math.random() * 5)}`,
+  subtitle: `${tran} ${fuel} Edition`,
+  price,
+  miles,
+  fuel,
+  trans: tran,
+  badge,
+  images: [
+    `assets/img/cars.jpg`,
+    `assets/img/cars-2.jpg`,
+    `assets/img/cars-2.jpg`
+  ]
+});
+
   }
   return cars;
 }
