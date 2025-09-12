@@ -1,6 +1,6 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HM Sportscar | Dare to Live More</title>
@@ -9,495 +9,967 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-    </head>
-    <body class="font-dmsans bg-black text-white">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="font-dmsans bg-black text-white">
     <style>
-        html, body {
+      html,
+      body {
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color:#0a0e1a ;
-        }
+        background-color: #0a0e1a;
+      }
 
-        *{
+      * {
         margin: 0;
         padding: 0;
-        font-family: 'DM Sans', sans-serif;
-        }
+        font-family: "DM Sans", sans-serif;
+      }
 
-      
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        .scrollbar-hide::-webkit-scrollbar {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .scrollbar-hide::-webkit-scrollbar {
         display: none;
-        }
+      }
 
-        /* Hide scrollbar for IE, Edge and Firefox */
-        .scrollbar-hide {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;     /* Firefox */
-        }
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        .scrollbar-hide::-webkit-scrollbar {
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .scrollbar-hide::-webkit-scrollbar {
         display: none;
-        }
+      }
 
-        /* Hide scrollbar for IE, Edge and Firefox */
-        .scrollbar-hide {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;     /* Firefox */
-        }
-
-
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
     </style>
     <!-- Navbar -->
-    <header class="absolute top-0 left-0 w-full z-50">
-        <div class="max-w-8xl mx-auto flex justify-between items-center py-6 px-6">
+    <header class="absolute top-0 left-0 w-full z-50 text-dark">
+      <div
+        class="max-w-8xl mx-auto flex justify-between items-center py-6 px-6"
+      >
         <!-- <h1 class="text-2xl font-bold" data-aos="fade-right">HM SportsCar</h1> -->
-        <img src="./assets/img/logo.png" alt="Hm Sports car logo" class="h-12" data-aos="fade-right">
+        <img
+          src="./assets/img/logo.png"
+          alt="Hm Sports car logo"
+          class="h-12"
+          data-aos="fade-right"
+        />
         <div class="md:hidden">
-            <button id="menu-toggle" class="focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"/>
+          <button id="menu-toggle" class="focus:outline-none">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
-            </button>
+          </button>
         </div>
         <nav id="menu" class="hidden md:flex items-center space-x-8">
-            <a href="#" class="font-medium hover:text-gray-300">Home</a>
-            <a href="#" class="font-medium hover:text-gray-300">Listings</a>
-           
-            <a href="#" class="font-medium hover:text-gray-300">About</a>
-            <a href="#" class="font-medium hover:text-gray-300">Contact</a>
-      <!-- Multi-lingual Dropdown -->
-<div class="relative group">
-  <button class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium hover:bg-gray-100 flex items-center gap-2">
-    EN
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-    </svg>
-  </button>
-  
-  <!-- Dropdown Menu -->
-  <div class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
-    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">German</a>
-    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Italian</a>
-  </div>
-</div>
+          <a href="#" class="font-medium hover:text-gray-300">Home</a>
+          <a href="listing.html" class="font-medium  hover:text-gray-300"
+            >Listings</a
+          >
+          <a href="#" class="font-medium hover:text-gray-300">About</a>
+          <a href="#" class="font-medium hover:text-gray-300">Contact</a>
+          <!-- Multi-lingual Dropdown -->
+          <div class="relative group">
+            <button
+              class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium hover:bg-gray-100 flex items-center gap-2"
+            >
+              EN
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
 
+            <!-- Dropdown Menu -->
+            <div
+              class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >English</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >German</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >Italian</a
+              >
+            </div>
+          </div>
         </nav>
+      </div>
+      <!-- Mobile Menu -->
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 flex flex-col items-center justify-center space-y-8 text-2xl"
+      >
+        <a href="#" class="hover:text-gray-300">Home</a>
+        <a href="listing.html" class="hover:text-gray-300">Listings</a>
+        <a href="#" class="hover:text-gray-300">About</a>
+        <a href="#" class="hover:text-gray-300">Contact</a>
+
+        <!-- Multi-lingual Dropdown (Mobile) -->
+        <div class="relative text-lg">
+          <button
+            id="lang-toggle"
+            class="bg-white text-gray-800 px-6 py-2 rounded-full font-medium hover:bg-gray-100 flex items-center gap-2"
+          >
+            EN
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown -->
+          <div
+            id="lang-menu"
+            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 hidden"
+          >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+              >English</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+              >German</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+              >Italian</a
+            >
+          </div>
         </div>
-        <!-- Mobile Menu -->
-        <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 flex flex-col items-center justify-center space-y-8 text-2xl">
-
-  <a href="#" class="hover:text-gray-300">Home</a>
-  <a href="#" class="hover:text-gray-300">Listings</a>
-  <a href="#" class="hover:text-gray-300">About</a>
-  <a href="#" class="hover:text-gray-300">Contact</a>
-
-  <!-- Multi-lingual Dropdown (Mobile) -->
-  <div class="relative text-lg">
-    <button id="lang-toggle" class="bg-white text-gray-800 px-6 py-2 rounded-full font-medium hover:bg-gray-100 flex items-center gap-2">
-      EN
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
-
-    <!-- Dropdown -->
-    <div id="lang-menu" class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 hidden">
-      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
-      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">German</a>
-      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Italian</a>
-    </div>
-  </div>
-</div>
-
+      </div>
     </header>
 
     <!-- Hero -->
-    <section class="relative min-h-screen w-full flex items-center justify-center text-center overflow-hidden">
+    <section
+      class="relative min-h-screen w-full flex items-center justify-center text-center overflow-hidden"
+    >
+      <!-- Background Video -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="./assets/img/motor.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline
-         class="absolute inset-0 w-full h-full object-cover">
-    <source src="./assets/img/motor.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <!-- Overlay for readability -->
+      <div class="absolute inset-0 bg-black/40"></div>
 
-  <!-- Overlay for readability -->
-  <div class="absolute inset-0 bg-black/40"></div>
+      <!-- Content -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <p class="mb-2 text-lg text-white">
+          Find cars for sale and rent near you
+        </p>
+        <!-- <h1 class="text-4xl md:text-7xl font-semibold mb-6 text-white">Find Your Perfect Car</h1> -->
+        <h1 class="text-5xl md:text-8xl font-extrabold mb-6 text-white">
+          Find Your Perfect Car
+        </h1>
 
-  <!-- Content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-4" data-aos="zoom-in" data-aos-delay="300">
-    <p class="mb-2 text-lg text-white">Find cars for sale and rent near you</p>
-    <!-- <h1 class="text-4xl md:text-7xl font-semibold mb-6 text-white">Find Your Perfect Car</h1> -->
-<h1 class="text-5xl md:text-8xl font-extrabold mb-6 text-white">
-  Find Your Perfect Car
-</h1>
+        <div
+          class="flex flex-wrap justify-center gap-4 mt-8 text-white"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <!-- SUV -->
+          <button
+            class="flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full font-medium hover:bg-white/30 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M8 40h4l4-12h32l4 12h4v8h-4a6 6 0 01-12 0H24a6 6 0 01-12 0H8v-8z"
+              />
+            </svg>
+            SUV
+          </button>
 
+          <!-- Sedan -->
+          <button
+            class="flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full font-medium hover:bg-white/30 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M6 36h4l6-10h32l6 10h4v8h-6a6 6 0 01-12 0H24a6 6 0 01-12 0H6v-8z"
+              />
+            </svg>
+            Sedan
+          </button>
 
-    <div class="flex flex-wrap justify-center gap-4 mt-8 text-white" data-aos="fade-up" data-aos-delay="100">
+          <!-- Hatchback -->
+          <button
+            class="flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full font-medium hover:bg-white/30 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M10 38h4l5-12h20c8 0 12 4 15 10h4v8h-5a6 6 0 01-12 0H27a6 6 0 01-12 0h-5v-6z"
+              />
+            </svg>
+            Hatchback
+          </button>
 
-      <!-- SUV -->
-      <button class="flex items-center gap-2 bg-white/20 backdrop-blur-md 
-                      px-6 py-3 rounded-full font-medium hover:bg-white/30 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
-             fill="currentColor" class="w-6 h-6">
-          <path d="M8 40h4l4-12h32l4 12h4v8h-4a6 6 0 01-12 0H24a6 6 0 01-12 0H8v-8z"/>
-        </svg>
-        SUV
-      </button>
+          <!-- Coupe -->
+          <button
+            class="flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full font-medium hover:bg-white/30 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M8 38h6c4-8 12-14 20-14h10c6 0 10 6 12 14h6v8h-6a6 6 0 01-12 0H26a6 6 0 01-12 0H8v-8z"
+              />
+            </svg>
+            Coupe
+          </button>
 
-      <!-- Sedan -->
-      <button class="flex items-center gap-2 bg-white/20 backdrop-blur-md 
-                      px-6 py-3 rounded-full font-medium hover:bg-white/30 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
-             fill="currentColor" class="w-6 h-6">
-          <path d="M6 36h4l6-10h32l6 10h4v8h-6a6 6 0 01-12 0H24a6 6 0 01-12 0H6v-8z"/>
-        </svg>
-        Sedan
-      </button>
-
-      <!-- Hatchback -->
-      <button class="flex items-center gap-2 bg-white/20 backdrop-blur-md 
-                      px-6 py-3 rounded-full font-medium hover:bg-white/30 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
-             fill="currentColor" class="w-6 h-6">
-          <path d="M10 38h4l5-12h20c8 0 12 4 15 10h4v8h-5a6 6 0 01-12 0H27a6 6 0 01-12 0h-5v-6z"/>
-        </svg>
-        Hatchback
-      </button>
-
-      <!-- Coupe -->
-      <button class="flex items-center gap-2 bg-white/20 backdrop-blur-md 
-                      px-6 py-3 rounded-full font-medium hover:bg-white/30 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
-             fill="currentColor" class="w-6 h-6">
-          <path d="M8 38h6c4-8 12-14 20-14h10c6 0 10 6 12 14h6v8h-6a6 6 0 01-12 0H26a6 6 0 01-12 0H8v-8z"/>
-        </svg>
-        Coupe
-      </button>
-
-      <!-- Hybrid -->
-      <button class="flex items-center gap-2 bg-white/20 backdrop-blur-md 
-                      px-6 py-3 rounded-full font-medium hover:bg-white/30 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
-             fill="currentColor" class="w-6 h-6">
-          <path d="M10 36h4l4-10h28l4 10h4v8h-4a6 6 0 01-12 0H26a6 6 0 01-12 0h-4v-8z"/>
-          <circle cx="20" cy="46" r="4" fill="currentColor"/>
-          <circle cx="44" cy="46" r="4" fill="currentColor"/>
-          <path d="M32 14l4 8h-8l4-8zM32 50l-4-8h8l-4 8z" fill="currentColor"/>
-        </svg>
-        Hybrid
-      </button>
-
-    </div>
-  </div>
-</section>
+          <!-- Hybrid -->
+          <button
+            class="flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full font-medium hover:bg-white/30 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M10 36h4l4-10h28l4 10h4v8h-4a6 6 0 01-12 0H26a6 6 0 01-12 0h-4v-8z"
+              />
+              <circle cx="20" cy="46" r="4" fill="currentColor" />
+              <circle cx="44" cy="46" r="4" fill="currentColor" />
+              <path
+                d="M32 14l4 8h-8l4-8zM32 50l-4-8h8l-4 8z"
+                fill="currentColor"
+              />
+            </svg>
+            Hybrid
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- Premium Brands Section -->
-    <section class="bg-[#f9fbfd] rounded-t-[2.5rem] py-16 px-6 md:px-12 -mt-7 relative z-20">
-    <div class="max-w-8xl mx-auto">
-
+    <section
+      class="bg-[#f9fbfd] rounded-t-[2.5rem] py-16 px-6 md:px-12 -mt-7 relative z-20"
+    >
+      <div class="max-w-8xl mx-auto">
         <!-- Header -->
         <div class="flex items-center justify-between mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight"
+          >
             Explore Our Premium Brands
-        </h2>
-        <a href="#" class="text-sm md:text-base text-gray-500 hover:text-blue-600 flex items-center gap-2 transition group">
+          </h2>
+          <a
+            href="#"
+            class="text-sm md:text-base text-gray-500 hover:text-blue-600 flex items-center gap-2 transition group"
+          >
             Show All
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 19L19 5M9 5h10v10" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 stroke-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 19L19 5M9 5h10v10"
+              />
             </svg>
-        </a>
+          </a>
         </div>
 
         <!-- Mobile Swiper -->
-       <div class="md:hidden relative">
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
+        <div class="md:hidden relative">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide grid grid-cols-2 gap-4">
+                <div
+                  class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+                >
+                  <img
+                    src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b1.jpg"
+                    alt="Audi"
+                    class="transition group-hover:scale-105"
+                  />
+                  <p
+                    class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+                  >
+                    Audi
+                  </p>
+                </div>
+                <div
+                  class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+                >
+                  <img
+                    src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b2.jpg"
+                    alt="BMW"
+                    class="transition group-hover:scale-105"
+                  />
+                  <p
+                    class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+                  >
+                    BMW
+                  </p>
+                </div>
+              </div>
 
-      <!-- Slide 1 -->
-      <div class="swiper-slide grid grid-cols-2 gap-4">
-        <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-          <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b1.jpg" alt="Audi" class="transition group-hover:scale-105">
-          <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Audi</p>
-        </div>
-        <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-          <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b2.jpg" alt="BMW" class="transition group-hover:scale-105">
-          <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">BMW</p>
-        </div>
-      </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide grid grid-cols-2 gap-4">
+                <div
+                  class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+                >
+                  <img
+                    src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b3.jpg"
+                    alt="Ford"
+                    class="transition group-hover:scale-105"
+                  />
+                  <p
+                    class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+                  >
+                    Ford
+                  </p>
+                </div>
+                <div
+                  class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+                >
+                  <img
+                    src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b4.jpg"
+                    alt="Mercedes Benz"
+                    class="transition group-hover:scale-105"
+                  />
+                  <p
+                    class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+                  >
+                    Mercedes Benz
+                  </p>
+                </div>
+              </div>
 
-      <!-- Slide 2 -->
-      <div class="swiper-slide grid grid-cols-2 gap-4">
-        <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-          <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b3.jpg" alt="Ford" class="transition group-hover:scale-105">
-          <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Ford</p>
-        </div>
-        <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-          <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b4.jpg" alt="Mercedes Benz" class="transition group-hover:scale-105">
-          <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Mercedes Benz</p>
-        </div>
-      </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide grid grid-cols-2 gap-4">
+                <div
+                  class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+                >
+                  <img
+                    src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b5.jpg"
+                    alt="Peugeot"
+                    class="transition group-hover:scale-105"
+                  />
+                  <p
+                    class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+                  >
+                    Peugeot
+                  </p>
+                </div>
+                <div
+                  class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+                >
+                  <img
+                    src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b6.jpg"
+                    alt="Volkswagen"
+                    class="transition group-hover:scale-105"
+                  />
+                  <p
+                    class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+                  >
+                    Volkswagen
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide grid grid-cols-2 gap-4">
-        <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-          <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b5.jpg" alt="Peugeot" class="transition group-hover:scale-105">
-          <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Peugeot</p>
+          <!-- Custom Arrows -->
+          <div
+            class="absolute inset-y-0 flex items-center justify-between w-full px-2"
+          >
+            <button
+              class="swiper-button-prev bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-md p-3 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              class="swiper-button-next bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-md p-3 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-          <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b6.jpg" alt="Volkswagen" class="transition group-hover:scale-105">
-          <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Volkswagen</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Custom Arrows -->
-  <div class="absolute inset-y-0 flex items-center justify-between w-full px-2">
-    <button class="swiper-button-prev bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-md p-3 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-    </button>
-    <button class="swiper-button-next bg-white/80 hover:bg-white text-gray-800 rounded-full shadow-md p-3 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
-  </div>
-</div>
-
 
         <!-- Desktop Grid -->
-<div class="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+        <div
+          class="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6"
+        >
+          <div
+            class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+          >
+            <img
+              src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b1.jpg"
+              alt="Audi"
+            />
+            <p
+              class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+            >
+              Audi
+            </p>
+          </div>
 
-  <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-    <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b1.jpg" alt="Audi">
-    <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Audi</p>
-  </div>
+          <div
+            class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+          >
+            <img
+              src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b2.jpg"
+              alt="BMW"
+            />
+            <p
+              class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+            >
+              BMW
+            </p>
+          </div>
 
-  <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-    <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b2.jpg" alt="BMW">
-    <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">BMW</p>
-  </div>
+          <div
+            class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+          >
+            <img
+              src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b3.jpg"
+              alt="Ford"
+            />
+            <p
+              class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+            >
+              Ford
+            </p>
+          </div>
 
-  <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-    <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b3.jpg" alt="Ford">
-    <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Ford</p>
-  </div>
+          <div
+            class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+          >
+            <img
+              src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b4.jpg"
+              alt="Mercedes Benz"
+            />
+            <p
+              class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+            >
+              Mercedes Benz
+            </p>
+          </div>
 
-  <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-    <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b4.jpg" alt="Mercedes Benz">
-    <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Mercedes Benz</p>
-  </div>
+          <div
+            class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+          >
+            <img
+              src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b5.jpg"
+              alt="Peugeot"
+            />
+            <p
+              class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+            >
+              Peugeot
+            </p>
+          </div>
 
-  <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-    <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b5.jpg" alt="Peugeot">
-    <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Peugeot</p>
-  </div>
-
-  <div class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition">
-    <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b6.jpg" alt="Volkswagen">
-    <p class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition">Volkswagen</p>
-  </div>
-
-</div>
-
-
-    </div>
+          <div
+            class="group flex flex-col items-center bg-white rounded-2xl border-2 border-transparent hover:border-[#d9463e] p-6 transition"
+          >
+            <img
+              src="https://demoapus1.com/boxcar/wp-content/uploads/2023/10/b6.jpg"
+              alt="Volkswagen"
+            />
+            <p
+              class="text-md font-semibold text-gray-800 group-hover:text-[#d9463e] transition"
+            >
+              Volkswagen
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="explore-vehicles bg-white py-16 px-6 md:px-12">
-    <div class="max-w-8xl mx-auto">
-
+      <div class="max-w-8xl mx-auto">
         <!-- Header -->
         <div class="flex items-center justify-between mb-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Explore All Vehicles</h2>
-        <a href="#" class="text-sm md:text-base text-gray-500 hover:text-blue-600 flex items-center gap-1 transition">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+            Explore All Vehicles
+          </h2>
+          <a
+            href="#"
+            class="text-sm md:text-base text-gray-500 hover:text-blue-600 flex items-center gap-1 transition"
+          >
             View All
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h14M12 5l7 7-7 7"
+              />
             </svg>
-        </a>
+          </a>
         </div>
 
         <!-- Tabs -->
-        <div class="flex space-x-6 border-b mb-8 text-gray-600 text-sm md:text-base">
-        <button class="tab-btn pb-2 border-b-2 border-blue-600 text-blue-600 font-medium" data-tab="stock">In Stock</button>
-        <button class="tab-btn pb-2 hover:text-blue-600" data-tab="new">New Cars</button>
-        <button class="tab-btn pb-2 hover:text-blue-600" data-tab="used">Used Cars</button>
+        <div
+          class="flex space-x-6 border-b mb-8 text-gray-600 text-sm md:text-base"
+        >
+          <button
+            class="tab-btn pb-2 border-b-2 border-blue-600 text-blue-600 font-medium"
+            data-tab="stock"
+          >
+            In Stock
+          </button>
+          <button class="tab-btn pb-2 hover:text-blue-600" data-tab="new">
+            New Cars
+          </button>
+          <button class="tab-btn pb-2 hover:text-blue-600" data-tab="used">
+            Used Cars
+          </button>
         </div>
 
-    <div id="cards-container" 
-     class="flex space-x-6 overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing">
-    </div>
-
-
-    </div>
+        <div
+          id="cards-container"
+          class="flex space-x-6 overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing"
+        ></div>
+      </div>
     </section>
-   <section class="fair_price bg-white py-12 px-4 md:py-16 md:px-12">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gray-50 rounded-2xl p-6 md:p-12">
-
-    <!-- Left Image -->
-    <div class="relative w-full">
-      <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/09/bg-video.jpg" 
-           alt="Car" 
-           class="rounded-xl w-full h-56 sm:h-72 md:h-full object-cover">
-      <!-- Play Button -->
-      <button class="absolute inset-0 flex items-center justify-center">
-        <span class="bg-white text-gray-800 rounded-full shadow-lg p-4 hover:scale-110 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" 
-               viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" 
-                  stroke-width="2" d="M14.752 11.168l-5.197-3.027A1 1 0 008 9.027v5.946a1 1 0 001.555.832l5.197-3.027a1 1 0 000-1.664z"/>
-          </svg>
-        </span>
-      </button>
-    </div>
-
-    <!-- Right Content -->
-    <div>
-      <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4 leading-snug">
-        Get A Fair Price For Your Car <br class="hidden md:block"/> Sell To Us Today
-      </h2>
-      <p class="text-gray-600 mb-6 text-sm md:text-base">
-        We are committed to providing our customers with exceptional service, competitive pricing, and a wide range of.
-      </p>
-
-      <ul class="space-y-4 mb-8">
-        <li class="flex items-start gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-          </svg>
-          <span class="text-gray-700 text-sm md:text-base">We are the UK's largest provider, with more patrols in more places</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-          </svg>
-          <span class="text-gray-700 text-sm md:text-base">You get 24/7 roadside assistance</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 text-blue-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-          </svg>
-          <span class="text-gray-700 text-sm md:text-base">We fix 4 out of 5 cars at the roadside</span>
-        </li>
-      </ul>
-
-      <a href="#" 
-   class="inline-flex items-center gap-2 bg-[#d9463e] hover:bg-red-700 text-white 
-          px-5 md:px-6 py-3 rounded-lg font-medium text-sm md:text-base transition">
-  Get Started
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" 
-       viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-          d="M5 12h14M12 5l7 7-7 7"/>
-  </svg>
-</a>
-
-    </div>
-  </div>
-
-  <!-- Stats Counter Section -->
-  <div class="mt-12 px-4">
-    <div class="grid grid-cols-2 md:grid-cols-4 text-center gap-6 md:gap-8">
-      <div>
-        <h3 class="counter text-2xl md:text-4xl font-bold text-gray-900" data-target="836">0</h3>
-        <p class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2">Cars For Sale</p>
-      </div>
-      <div>
-        <h3 class="counter text-2xl md:text-4xl font-bold text-gray-900" data-target="738">0</h3>
-        <p class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2">Dealer Reviews</p>
-      </div>
-      <div>
-        <h3 class="counter text-2xl md:text-4xl font-bold text-gray-900" data-target="100">0</h3>
-        <p class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2">Visitors Per Day</p>
-      </div>
-      <div>
-        <h3 class="counter text-2xl md:text-4xl font-bold text-gray-900" data-target="238">0</h3>
-        <p class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2">Verified Dealers</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <hr>
-   <section class="why-buy-from-us bg-gray-50 py-16 px-6 md:px-12">
-  <div class="max-w-7xl mx-auto text-center">
-    
-    <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-14">
-      Why Buy From Us
-    </h2>
-
-    <!-- Features Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-
-      <!-- Feature Card -->
-      <div class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition">
-        <div class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#d9463e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"/>
-          </svg>
+    <section class="fair_price bg-white py-12 px-4 md:py-16 md:px-12">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gray-50 rounded-2xl p-6 md:p-12"
+      >
+        <!-- Left Image -->
+        <div class="relative w-full">
+          <img
+            src="https://demoapus1.com/boxcar/wp-content/uploads/2023/09/bg-video.jpg"
+            alt="Car"
+            class="rounded-xl w-full h-56 sm:h-72 md:h-full object-cover"
+          />
+          <!-- Play Button -->
+          <button class="absolute inset-0 flex items-center justify-center">
+            <span
+              class="bg-white text-gray-800 rounded-full shadow-lg p-4 hover:scale-110 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.752 11.168l-5.197-3.027A1 1 0 008 9.027v5.946a1 1 0 001.555.832l5.197-3.027a1 1 0 000-1.664z"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Locally Owned</h3>
-        <p class="text-gray-600 text-sm">We’re part of your community with trusted local ownership.</p>
-      </div>
 
-      <!-- Feature Card -->
-      <div class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition">
-        <div class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#d9463e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h13l-4 6H9zm0 0v4m0-4H5a2 2 0 01-2-2V7a2 2 0 012-2h4v12z"/>
-          </svg>
+        <!-- Right Content -->
+        <div>
+          <h2
+            class="text-2xl md:text-4xl font-bold text-gray-900 mb-4 leading-snug"
+          >
+            Get A Fair Price For Your Car <br class="hidden md:block" />
+            Sell To Us Today
+          </h2>
+          <p class="text-gray-600 mb-6 text-sm md:text-base">
+            We are committed to providing our customers with exceptional
+            service, competitive pricing, and a wide range of.
+          </p>
+
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 md:w-6 md:h-6 text-blue-600 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base"
+                >We are the UK's largest provider, with more patrols in more
+                places</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 md:w-6 md:h-6 text-blue-600 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base"
+                >You get 24/7 roadside assistance</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 md:w-6 md:h-6 text-blue-600 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <span class="text-gray-700 text-sm md:text-base"
+                >We fix 4 out of 5 cars at the roadside</span
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="inline-flex items-center gap-2 bg-[#d9463e] hover:bg-red-700 text-white px-5 md:px-6 py-3 rounded-lg font-medium text-sm md:text-base transition"
+          >
+            Get Started
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h14M12 5l7 7-7 7"
+              />
+            </svg>
+          </a>
         </div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Nationwide Delivery</h3>
-        <p class="text-gray-600 text-sm">Get your car delivered anywhere across the country safely.</p>
       </div>
 
-      <!-- Feature Card -->
-      <div class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition">
-        <div class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#d9463e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
+      <!-- Stats Counter Section -->
+      <div class="mt-12 px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 text-center gap-6 md:gap-8">
+          <div>
+            <h3
+              class="counter text-2xl md:text-4xl font-bold text-gray-900"
+              data-target="836"
+            >
+              0
+            </h3>
+            <p
+              class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2"
+            >
+              Cars For Sale
+            </p>
+          </div>
+          <div>
+            <h3
+              class="counter text-2xl md:text-4xl font-bold text-gray-900"
+              data-target="738"
+            >
+              0
+            </h3>
+            <p
+              class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2"
+            >
+              Dealer Reviews
+            </p>
+          </div>
+          <div>
+            <h3
+              class="counter text-2xl md:text-4xl font-bold text-gray-900"
+              data-target="100"
+            >
+              0
+            </h3>
+            <p
+              class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2"
+            >
+              Visitors Per Day
+            </p>
+          </div>
+          <div>
+            <h3
+              class="counter text-2xl md:text-4xl font-bold text-gray-900"
+              data-target="238"
+            >
+              0
+            </h3>
+            <p
+              class="text-xs md:text-sm uppercase text-gray-600 tracking-wide mt-2"
+            >
+              Verified Dealers
+            </p>
+          </div>
         </div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Certified Cars</h3>
-        <p class="text-gray-600 text-sm">All cars go through strict inspections for guaranteed quality.</p>
       </div>
+    </section>
 
-      <!-- Feature Card -->
-      <div class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition">
-        <div class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#d9463e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13h18M5 10l1-2h12l1 2M6 19a2 2 0 104 0 2 2 0 00-4 0zm8 0a2 2 0 104 0 2 2 0 00-4 0z"/>
-          </svg>
+    <hr />
+    <section class="why-buy-from-us bg-gray-50 py-16 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Heading -->
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-14">
+          Why Buy From Us
+        </h2>
+
+        <!-- Features Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12"
+        >
+          <!-- Feature Card -->
+          <div
+            class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition"
+          >
+            <div
+              class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-[#d9463e]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Locally Owned
+            </h3>
+            <p class="text-gray-600 text-sm">
+              We’re part of your community with trusted local ownership.
+            </p>
+          </div>
+
+          <!-- Feature Card -->
+          <div
+            class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition"
+          >
+            <div
+              class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-[#d9463e]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 17v-6h13l-4 6H9zm0 0v4m0-4H5a2 2 0 01-2-2V7a2 2 0 012-2h4v12z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Nationwide Delivery
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Get your car delivered anywhere across the country safely.
+            </p>
+          </div>
+
+          <!-- Feature Card -->
+          <div
+            class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition"
+          >
+            <div
+              class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-[#d9463e]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Certified Cars
+            </h3>
+            <p class="text-gray-600 text-sm">
+              All cars go through strict inspections for guaranteed quality.
+            </p>
+          </div>
+
+          <!-- Feature Card -->
+          <div
+            class="flex flex-col items-center text-center bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition"
+          >
+            <div
+              class="flex items-center justify-center w-20 h-20 rounded-full bg-blue-100 mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-[#d9463e]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 13h18M5 10l1-2h12l1 2M6 19a2 2 0 104 0 2 2 0 00-4 0zm8 0a2 2 0 104 0 2 2 0 00-4 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Free Test Drive
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Experience the car before buying, with no hidden conditions.
+            </p>
+          </div>
         </div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-2">Free Test Drive</h3>
-        <p class="text-gray-600 text-sm">Experience the car before buying, with no hidden conditions.</p>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- <section style="height: 80vh;" class="bg-gray-50 py-20 px-6 md:px-12">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -533,7 +1005,9 @@
       <div class="max-w-7xl mx-auto">
         <!-- Header -->
         <div class="flex items-center justify-between mb-8">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What our customers say</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+            What our customers say
+          </h2>
           <p class="text-gray-600 text-sm md:text-base">
             Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews
           </p>
@@ -542,230 +1016,388 @@
         <!-- Slider Container -->
         <div class="relative">
           <!-- Cards Wrapper -->
-          <div id="testimonial-wrapper" class="flex space-x-6 overflow-x-auto scroll-smooth pb-4 scrollbar-hide">
+          <div
+            id="testimonial-wrapper"
+            class="flex space-x-6 overflow-x-auto scroll-smooth pb-4 scrollbar-hide"
+          >
             <!-- JS will inject testimonial cards here -->
           </div>
 
           <!-- Controls -->
           <div class="flex justify-center gap-4 mt-6">
-            <button id="prev-btn" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            <button
+              id="prev-btn"
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-700"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
             </button>
-            <button id="next-btn" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            <button
+              id="next-btn"
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-700"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-white py-16 px-6 md:px-12 flex items-center rounded-b-[4rem]">
-      <div class="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-
+    <section
+      class="bg-white py-16 px-6 md:px-12 flex items-center rounded-b-[4rem]"
+    >
+      <div
+        class="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-12"
+      >
         <!-- Left Form Section -->
         <div>
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">Didn’t Find Your Car?</h2>
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Didn’t Find Your Car?
+          </h2>
           <p class="text-gray-600 mb-8">
-            Fill in your requirements below and our team will contact you with the best match for your dream car.
+            Fill in your requirements below and our team will contact you with
+            the best match for your dream car.
           </p>
 
           <form id="carForm" class="space-y-6">
             <!-- Name -->
-            <input type="text" name="name" placeholder="Name*" required
-                  class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name*"
+              required
+              class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
 
             <!-- Email -->
-            <input type="email" name="email" placeholder="Email*" required
-                  class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email*"
+              required
+              class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
 
             <!-- Number -->
-            <input type="text" name="number" placeholder="Phone Number*" required
-                  class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
+            <input
+              type="text"
+              name="number"
+              placeholder="Phone Number*"
+              required
+              class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
 
             <!-- Car Details -->
-            <textarea name="details" rows="3" placeholder="Car Details"
-                      class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+            <textarea
+              name="details"
+              rows="3"
+              placeholder="Car Details"
+              class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"
+            ></textarea>
 
             <!-- Budget + Checkbox -->
             <div>
-              <input type="number" id="budget" name="budget" placeholder="Budget ($)"
-                    class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none">
-            
+              <input
+                type="number"
+                id="budget"
+                name="budget"
+                placeholder="Budget ($)"
+                class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"
+              />
             </div>
 
             <!-- Notes -->
-            <textarea name="notes" rows="3" placeholder="Notes"
-                      class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>        
+            <textarea
+              name="notes"
+              rows="3"
+              placeholder="Notes"
+              class="w-full px-4 py-3 border rounded-lg text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 outline-none"
+            ></textarea>
 
             <!-- Submit -->
-            <button type="submit"
-  class="bg-[#d9463e] text-white px-8 py-3 rounded-lg shadow hover:bg-[#b03028] transition">
-  Submit Requirements
-</button>
-
+            <button
+              type="submit"
+              class="bg-[#d9463e] text-white px-8 py-3 rounded-lg shadow hover:bg-[#b03028] transition"
+            >
+              Submit Requirements
+            </button>
           </form>
         </div>
 
-    <!-- Right Contact Info -->
-    <div class="rounded-xl p-8">
-      <h3 class="text-xl font-semibold text-gray-800 mb-4">Didn’t find your car?</h3>
-      <p class="text-gray-600 mb-6">
-        If you couldn’t find the car you were looking for, fill out this form with your required car details and our team will get in touch with you.
-      </p>
+        <!-- Right Contact Info -->
+        <div class="rounded-xl p-8">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">
+            Didn’t find your car?
+          </h3>
+          <p class="text-gray-600 mb-6">
+            If you couldn’t find the car you were looking for, fill out this
+            form with your required car details and our team will get in touch
+            with you.
+          </p>
 
-      <ul class="space-y-4 text-gray-700 mb-8">
-        <li><span class="font-medium">Address:</span><br> 123 Queensberry Street, North Melbourne VIC3051, Australia.</li>
-        <li><span class="font-medium">Email:</span><br> info@hmsportscars.com</li>
-        <li><span class="font-medium">Phone:</span><br> +76 956 123 456</li>
-      </ul>
+          <ul class="space-y-4 text-gray-700 mb-8">
+            <li>
+              <span class="font-medium">Address:</span><br />
+              123 Queensberry Street, North Melbourne VIC3051, Australia.
+            </li>
+            <li>
+              <span class="font-medium">Email:</span><br />
+              info@hmsportscars.com
+            </li>
+            <li>
+              <span class="font-medium">Phone:</span><br />
+              +76 956 123 456
+            </li>
+          </ul>
 
-      <!-- Social Icons -->
-      <div>
-        <p class="text-gray-700 font-medium mb-3">Follow us</p>
-        <div class="flex space-x-4 text-gray-600">
+          <!-- Social Icons -->
+          <div>
+            <p class="text-gray-700 font-medium mb-3">Follow us</p>
+            <div class="flex space-x-4 text-gray-600">
+              <!-- Facebook -->
+              <a
+                href="#"
+                class="hover:text-blue-600 transition"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0 1 14 6h3v3h-3c-.3 0-.5.2-.5.5V12H17l-.5 3h-2.5v7A10 10 0 0 0 22 12z"
+                  />
+                </svg>
+              </a>
 
-          <!-- Facebook -->
-          <a href="#" class="hover:text-blue-600 transition" aria-label="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                class="w-6 h-6">
-              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0 1 14 6h3v3h-3c-.3 0-.5.2-.5.5V12H17l-.5 3h-2.5v7A10 10 0 0 0 22 12z"/>
-            </svg>
-          </a>
+              <!-- Twitter -->
+              <a
+                href="#"
+                class="hover:text-blue-400 transition"
+                aria-label="Twitter"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9.18 9.18 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2-4.52 4.52 0 .35.04.7.11 1.03A12.82 12.82 0 0 1 3.15 1.67a4.49 4.49 0 0 0-.61 2.27c0 1.57.8 2.95 2.02 3.76a4.52 4.52 0 0 1-2.05-.56v.06c0 2.2 1.57 4.04 3.64 4.46a4.52 4.52 0 0 1-2.04.08c.57 1.78 2.23 3.07 4.2 3.1A9.05 9.05 0 0 1 2 19.54a12.77 12.77 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.41-.01-.61A9.2 9.2 0 0 0 23 3z"
+                  />
+                </svg>
+              </a>
 
-          <!-- Twitter -->
-          <a href="#" class="hover:text-blue-400 transition" aria-label="Twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                class="w-6 h-6">
-              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4.36a9.18 9.18 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2-4.52 4.52 0 .35.04.7.11 1.03A12.82 12.82 0 0 1 3.15 1.67a4.49 4.49 0 0 0-.61 2.27c0 1.57.8 2.95 2.02 3.76a4.52 4.52 0 0 1-2.05-.56v.06c0 2.2 1.57 4.04 3.64 4.46a4.52 4.52 0 0 1-2.04.08c.57 1.78 2.23 3.07 4.2 3.1A9.05 9.05 0 0 1 2 19.54a12.77 12.77 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.41-.01-.61A9.2 9.2 0 0 0 23 3z"/>
-            </svg>
-          </a>
+              <!-- Instagram -->
+              <a
+                href="#"
+                class="hover:text-pink-500 transition"
+                aria-label="Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+              </a>
 
-          <!-- Instagram -->
-          <a href="#" class="hover:text-pink-500 transition" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                class="w-6 h-6">
-              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg>
-          </a>
-
-          <!-- LinkedIn -->
-          <a href="#" class="hover:text-blue-700 transition" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
-                class="w-6 h-6">
-              <path d="M20.45 20.45h-3.55v-5.4c0-1.29-.02-2.96-1.8-2.96-1.8 0-2.07 1.4-2.07 2.85v5.51h-3.55V9h3.41v1.56h.05c.48-.9 1.65-1.85 3.39-1.85 3.62 0 4.29 2.38 4.29 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
-            </svg>
-          </a>
+              <!-- LinkedIn -->
+              <a
+                href="#"
+                class="hover:text-blue-700 transition"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M20.45 20.45h-3.55v-5.4c0-1.29-.02-2.96-1.8-2.96-1.8 0-2.07 1.4-2.07 2.85v5.51h-3.55V9h3.41v1.56h.05c.48-.9 1.65-1.85 3.39-1.85 3.62 0 4.29 2.38 4.29 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
       </div>
     </section>
 
+    <footer class="bg-[#0a0e1a] text-gray-300 pt-16 pb-8 relative">
+      <div class="max-w-8xl mx-auto px-6 md:px-12">
+        <!-- Newsletter -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mb-12"
+        >
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-2xl font-bold text-white">Join HM Sportscar</h3>
+            <p class="text-gray-400">
+              Receive pricing updates, shopping tips & more!
+            </p>
+          </div>
+          <form class="flex w-full md:w-auto">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="w-full md:w-96 px-4 py-3 rounded-l-full bg-gray-800 text-white placeholder-gray-400 focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="px-6 py-3 bg-[#d9463e] hover:bg-[#b03028] text-white rounded-r-full font-medium transition"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
 
-   <footer class="bg-[#0a0e1a] text-gray-300 pt-16 pb-8 relative">
-  <div class="max-w-8xl mx-auto px-6 md:px-12">
+        <!-- Divider -->
+        <div class="border-t border-gray-700 mb-12"></div>
 
-    <!-- Newsletter -->
-    <div class="flex flex-col md:flex-row justify-between items-center mb-12">
-      <div class="mb-6 md:mb-0">
-        <h3 class="text-2xl font-bold text-white">Join HM Sportscar</h3>
-        <p class="text-gray-400">Receive pricing updates, shopping tips & more!</p>
-      </div>
-      <form class="flex w-full md:w-auto">
-        <input type="email" placeholder="Your email address"
-          class="w-full md:w-96 px-4 py-3 rounded-l-full bg-gray-800 text-white placeholder-gray-400 focus:outline-none">
-       <button type="submit"
-  class="px-6 py-3 bg-[#d9463e] hover:bg-[#b03028] text-white rounded-r-full font-medium transition">
-  Sign Up
-</button>
+        <!-- Links Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          <!-- Logo + Description + Socials -->
+          <div>
+            <img
+              src="assets/img/logo.png"
+              alt="HM Sportscar Logo"
+              class="mb-4"
+            />
+            <p class="text-gray-400 mb-4">
+              HM Sportscar is your trusted destination for premium cars,
+              financing, and after-sales service.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22 12a10 10 0 10-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0022 12z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.09 9.09 0 01-2.88 1.1 4.52 4.52 0 00-7.7 4.13 12.84 12.84 0 01-9.33-4.73A4.48 4.48 0 004.52 9a4.48 4.48 0 01-2-.55v.05a4.51 4.51 0 003.63 4.42 4.52 4.52 0 01-2 .07 4.52 4.52 0 004.22 3.14A9.06 9.06 0 012 19.54a12.8 12.8 0 006.92 2"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.6 3H4.4A1.4 1.4 0 003 4.4v15.2A1.4 1.4 0 004.4 21h15.2a1.4 1.4 0 001.4-1.4V4.4A1.4 1.4 0 0019.6 3zm-8 14H9v-7h2.6v7zm-1.3-8.1a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm9.3 8.1h-2.6v-3.7c0-.9-.4-1.5-1.2-1.5-.7 0-1.1.5-1.3 1.1-.1.2-.1.5-.1.8V17h-2.6s.1-6.1 0-6.7h2.6v1c.3-.5.9-1.2 2.2-1.2 1.6 0 2.8 1 2.8 3.1V17z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
 
-      </form>
-    </div>
+          <!-- Company -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-white">About Us</a></li>
+              <li><a href="#" class="hover:text-white">Blog</a></li>
+              <li><a href="#" class="hover:text-white">Services</a></li>
+              <li><a href="#" class="hover:text-white">FAQs</a></li>
+              <li><a href="#" class="hover:text-white">Terms</a></li>
+              <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            </ul>
+          </div>
 
-    <!-- Divider -->
-    <div class="border-t border-gray-700 mb-12"></div>
+          <!-- Our Brands -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Our Brands</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-white">Toyota</a></li>
+              <li><a href="#" class="hover:text-white">Porsche</a></li>
+              <li><a href="#" class="hover:text-white">Audi</a></li>
+              <li><a href="#" class="hover:text-white">BMW</a></li>
+              <li><a href="#" class="hover:text-white">Ford</a></li>
+              <li><a href="#" class="hover:text-white">Nissan</a></li>
+              <li><a href="#" class="hover:text-white">Peugeot</a></li>
+              <li><a href="#" class="hover:text-white">Volkswagen</a></li>
+            </ul>
+          </div>
 
-    <!-- Links Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          <!-- Contact Information -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Contact Information</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li>
+                <span class="font-medium text-white">Address:</span> 123 Luxury
+                St, London, UK
+              </li>
+              <li>
+                <span class="font-medium text-white">Phone:</span> +44 123 456
+                789
+              </li>
+              <li>
+                <span class="font-medium text-white">Email:</span>
+                info@hmsportscar.com
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <!-- Logo + Description + Socials -->
-      <div>
-        <img src="assets/img/logo.png" alt="HM Sportscar Logo" class="mb-4">
-        <p class="text-gray-400 mb-4">HM Sportscar is your trusted destination for premium cars, financing, and after-sales service.</p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M22 12a10 10 0 10-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0022 12z"/>
-            </svg>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.09 9.09 0 01-2.88 1.1 4.52 4.52 0 00-7.7 4.13 12.84 12.84 0 01-9.33-4.73A4.48 4.48 0 004.52 9a4.48 4.48 0 01-2-.55v.05a4.51 4.51 0 003.63 4.42 4.52 4.52 0 01-2 .07 4.52 4.52 0 004.22 3.14A9.06 9.06 0 012 19.54a12.8 12.8 0 006.92 2"/>
-            </svg>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.6 3H4.4A1.4 1.4 0 003 4.4v15.2A1.4 1.4 0 004.4 21h15.2a1.4 1.4 0 001.4-1.4V4.4A1.4 1.4 0 0019.6 3zm-8 14H9v-7h2.6v7zm-1.3-8.1a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm9.3 8.1h-2.6v-3.7c0-.9-.4-1.5-1.2-1.5-.7 0-1.1.5-1.3 1.1-.1.2-.1.5-.1.8V17h-2.6s.1-6.1 0-6.7h2.6v1c.3-.5.9-1.2 2.2-1.2 1.6 0 2.8 1 2.8 3.1V17z"/>
-            </svg>
-          </a>
+        <!-- Bottom Strip -->
+        <div
+          class="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-500"
+        >
+          <p>© 2025 HM SportsCar.com. All rights reserved.</p>
+          <div class="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" class="hover:text-white">Terms & Conditions</a>
+            <a href="#" class="hover:text-white">Privacy Notice</a>
+          </div>
         </div>
       </div>
-
-      <!-- Company -->
-      <div>
-        <h4 class="text-white font-semibold mb-4">Company</h4>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-white">About Us</a></li>
-          <li><a href="#" class="hover:text-white">Blog</a></li>
-          <li><a href="#" class="hover:text-white">Services</a></li>
-          <li><a href="#" class="hover:text-white">FAQs</a></li>
-          <li><a href="#" class="hover:text-white">Terms</a></li>
-          <li><a href="#" class="hover:text-white">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Our Brands -->
-      <div>
-        <h4 class="text-white font-semibold mb-4">Our Brands</h4>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-white">Toyota</a></li>
-          <li><a href="#" class="hover:text-white">Porsche</a></li>
-          <li><a href="#" class="hover:text-white">Audi</a></li>
-          <li><a href="#" class="hover:text-white">BMW</a></li>
-          <li><a href="#" class="hover:text-white">Ford</a></li>
-          <li><a href="#" class="hover:text-white">Nissan</a></li>
-          <li><a href="#" class="hover:text-white">Peugeot</a></li>
-          <li><a href="#" class="hover:text-white">Volkswagen</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Information -->
-      <div>
-        <h4 class="text-white font-semibold mb-4">Contact Information</h4>
-        <ul class="space-y-3 text-gray-400">
-          <li><span class="font-medium text-white">Address:</span> 123 Luxury St, London, UK</li>
-          <li><span class="font-medium text-white">Phone:</span> +44 123 456 789</li>
-          <li><span class="font-medium text-white">Email:</span> info@hmsportscar.com</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Bottom Strip -->
-    <div class="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-500">
-      <p>© 2025 HM SportsCar.com. All rights reserved.</p>
-      <div class="flex space-x-4 mt-4 md:mt-0">
-        <a href="#" class="hover:text-white">Terms & Conditions</a>
-        <a href="#" class="hover:text-white">Privacy Notice</a>
-      </div>
-    </div>
-
-  </div>
     </footer>
-
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -773,71 +1405,72 @@
     <script src="assets/vehicles.js"></script>
     <script src="./assets/testimonials.js"></script>
     <script>
-    AOS.init({ duration: 1000, once: true });
+      AOS.init({ duration: 1000, once: true });
 
       // Mobile language dropdown toggle
 
+      // Mobile nav toggle
+      const toggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const langToggle = document.getElementById("lang-toggle");
+      const langMenu = document.getElementById("lang-menu");
+      const counters = document.querySelectorAll(".counter");
+      const speed = 100; // lower = faster
 
- 
-    // Mobile nav toggle
-    const toggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const langToggle = document.getElementById("lang-toggle");
-    const langMenu = document.getElementById("lang-menu");
- const counters = document.querySelectorAll('.counter');
-  const speed = 100; // lower = faster
+      toggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      langToggle.addEventListener("click", () => {
+        langMenu.classList.toggle("hidden");
+      });
 
-    toggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-     langToggle.addEventListener("click", () => {
-    langMenu.classList.toggle("hidden");
-  });
+      // Close menu if clicked outside
+      document.addEventListener("click", (e) => {
+        if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
+          langMenu.classList.add("hidden");
+        }
+      });
 
-  // Close menu if clicked outside
-  document.addEventListener("click", (e) => {
-    if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
-      langMenu.classList.add("hidden");
-    }
-  });
-
-    const swiper = new Swiper(".mySwiper", {
+      const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 16,
         navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-    });
-   function animateCounter(counter) {
-    const target = +counter.getAttribute('data-target');
-    let current = 0;
-    const increment = Math.ceil(target / speed);
+      });
+      function animateCounter(counter) {
+        const target = +counter.getAttribute("data-target");
+        let current = 0;
+        const increment = Math.ceil(target / speed);
 
-    function update() {
-      if (current < target) {
-        current += increment;
-        counter.innerText = current;
-        setTimeout(update, 20);
-      } else {
-        counter.innerText = target + "K";
+        function update() {
+          if (current < target) {
+            current += increment;
+            counter.innerText = current;
+            setTimeout(update, 20);
+          } else {
+            counter.innerText = target + "K";
+          }
+        }
+        update();
       }
-    }
-    update();
-  }
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounter(entry.target);
-        observer.unobserve(entry.target); // ek hi baar chale
-      }
-    });
-  }, { threshold: 0.5 }); // 50% visible par start ho
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              observer.unobserve(entry.target); // ek hi baar chale
+            }
+          });
+        },
+        { threshold: 0.5 }
+      ); // 50% visible par start ho
 
-  counters.forEach(counter => {
-    observer.observe(counter);
-  });
+      counters.forEach((counter) => {
+        observer.observe(counter);
+      });
     </script>
- </body>
+  </body>
 </html>
