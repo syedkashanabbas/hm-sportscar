@@ -1,109 +1,82 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HM Sportscar | Dare to Live More</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HM Sportscar | Dare to Live More</title>
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-dmsans bg-[#0a0e1a]">
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: white !important;
+    color: black;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
 
-    </head>
-    <body class="font-dmsans bg-black text-white">
-    <style>
-        html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-color:#0a0e1a ;
-        }
-
-        *{
-        margin: 0;
-        padding: 0;
-        font-family: 'DM Sans', sans-serif;
-        }
-
-      
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-        }
-
-        /* Hide scrollbar for IE, Edge and Firefox */
-        .scrollbar-hide {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;     /* Firefox */
-        }
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-        }
-
-        /* Hide scrollbar for IE, Edge and Firefox */
-        .scrollbar-hide {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;     /* Firefox */
-        }
-
-
-    </style>
-    <!-- Navbar -->
-    <header class="absolute top-0 left-0 w-full z-50">
-        <div class="max-w-8xl mx-auto flex justify-between items-center py-6 px-6">
-        <!-- <h1 class="text-2xl font-bold" data-aos="fade-right">HM SportsCar</h1> -->
-        <img src="./assets/img/logo.png" alt="Hm Sports car logo" class="h-12" data-aos="fade-right">
-        <div class="md:hidden">
-            <button id="menu-toggle" class="focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-            </button>
+<!-- Header -->
+<header class="absolute top-0 left-0 w-full z-50">
+  <div class="max-w-8xl mx-auto flex justify-between items-center py-6 px-6">
+    <img src="./assets/img/logo.png" alt="Hm Sports car logo" class="h-12" data-aos="fade-right">
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="menu" class="hidden md:flex items-center space-x-8">
+      <a href="#" class="font-medium hover:text-gray-300">Home</a>
+      <a href="listing.html" class="font-medium hover:text-gray-300">Listings</a>           
+      <a href="#" class="font-medium hover:text-gray-300">About</a>
+      <a href="#" class="font-medium hover:text-gray-300">Contact</a>
+      <div class="relative group">
+        <button class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium hover:bg-gray-100 flex items-center gap-2">
+          EN
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">German</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Italian</a>
         </div>
-        <nav id="menu" class="hidden md:flex items-center space-x-8">
-            <a href="#" class="font-medium hover:text-gray-300">Home</a>
-            <a href="listing.html" class="font-medium hover:text-gray-300">Listings</a>           
-            <a href="#" class="font-medium hover:text-gray-300">About</a>
-            <a href="#" class="font-medium hover:text-gray-300">Contact</a>
-      <!-- Multi-lingual Dropdown -->
-<div class="relative group">
-  <button class="bg-white text-gray-800 px-4 py-2 rounded-full font-medium hover:bg-gray-100 flex items-center gap-2">
-    EN
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-    </svg>
-  </button>
-  
-  <!-- Dropdown Menu -->
-  <div class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
-    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">German</a>
-    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Italian</a>
+      </div>
+    </nav>
   </div>
-</div>
+</header>
 
-        </nav>
-        </div>
-        <!-- Mobile Menu -->
-        <!-- Mobile Menu -->
+<!-- Mobile Menu -->
 <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 flex flex-col items-center justify-center space-y-8 text-2xl">
-
   <a href="#" class="hover:text-gray-300">Home</a>
   <a href="listing.html" class="hover:text-gray-300">Listings</a>
   <a href="#" class="hover:text-gray-300">About</a>
   <a href="#" class="hover:text-gray-300">Contact</a>
-
-  <!-- Multi-lingual Dropdown (Mobile) -->
   <div class="relative text-lg">
     <button id="lang-toggle" class="bg-white text-gray-800 px-6 py-2 rounded-full font-medium hover:bg-gray-100 flex items-center gap-2">
       EN
@@ -111,8 +84,6 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-
-    <!-- Dropdown -->
     <div id="lang-menu" class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-200 hidden">
       <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">English</a>
       <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">German</a>
@@ -121,523 +92,220 @@
   </div>
 </div>
 
-    </header>
-<!-- Listings Section (Light Theme) -->
-<section class="bg-white text-gray-800 py-16 px-6 md:px-12">
-  <div class="max-w-7xl mx-auto">
-    <!-- Breadcrumb -->
-    <nav class="text-sm text-red-600 mb-4">
-      <a href="#" class="hover:underline">Home</a> / <span>Listing</span>
-    </nav>
+<!-- Car Detail Section -->
+<section class="max-w-7xl mx-auto px-6 py-32">
 
-    <!-- Heading -->
-   <div class="flex flex-col md:flex-row justify-between items-center mb-8">
-  <h2 class="text-3xl font-bold text-red-600">Listing</h2>
 
-  <div class="relative mt-4 md:mt-0">
-    <select class="appearance-none rounded-full border border-gray-300 bg-white text-gray-700 px-5 py-2 pr-10 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500">
-      <option>Sort by Default</option>
-      <option>Price (Low → High)</option>
-      <option>Price (High → Low)</option>
-      <option>Mileage</option>
-    </select>
-
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+    <div>
+      <h1 class="text-4xl font-bold mb-2">Audi A6 3.5 – New</h1>
+      <p class="text-gray-400">3.5 D5 PowerPulse Momentum 5dr AWD Geartronic Estate</p>
+    </div>
+    <div class="mt-6 md:mt-0 text-left md:text-right">
+      <p class="text-3xl font-bold text-[#d9463e]">$58,000</p>
+      <button class="mt-2 text-sm font-medium text-[#d9463e] hover:underline">Make An Offer Price</button>
+    </div>
   </div>
-</div>
 
-
-    <!-- Filters -->
   <div class="flex flex-wrap gap-3 mb-10">
-
-  <!-- Select -->
-  <div class="relative">
-    <select class="appearance-none rounded-full border border-gray-300 bg-white text-gray-700 px-5 py-2 pr-10 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500">
-      <option>Condition</option>
-    </select>
-  
+    <span class="px-4 py-2 rounded-full bg-gray-800 text-gray-200">2023</span>
+    <span class="px-4 py-2 rounded-full bg-gray-800 text-gray-200">100 miles</span>
+    <span class="px-4 py-2 rounded-full bg-gray-800 text-gray-200">Automatic</span>
+    <span class="px-4 py-2 rounded-full bg-gray-800 text-gray-200">Petrol</span>
   </div>
 
-  <div class="relative">
-    <select class="appearance-none rounded-full border border-gray-300 bg-white text-gray-700 px-5 py-2 pr-10 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500">
-      <option>Category</option>
-    </select>
-   
-  </div>
-
-  <div class="relative">
-    <select class="appearance-none rounded-full border border-gray-300 bg-white text-gray-700 px-5 py-2 pr-10 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500">
-      <option>Type</option>
-    </select>
-   
-  </div>
-
-  <div class="relative">
-    <select class="appearance-none rounded-full border border-gray-300 bg-white text-gray-700 px-5 py-2 pr-10 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500">
-      <option>Any Makes</option>
-    </select>
-   
-  </div>
-
-  <div class="relative">
-    <select class="appearance-none rounded-full border border-gray-300 bg-white text-gray-700 px-5 py-2 pr-10 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500">
-      <option>Any Models</option>
-    </select>
-   
-  </div>
-
-  <!-- Button -->
-  <button class="flex items-center gap-2 rounded-full border border-gray-300 bg-white text-gray-700 px-5 py-2 text-sm shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500">
-    <!-- Filter Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L15 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 019 21v-7.586L3.293 6.707A1 1 0 013 6V4z"/>
-    </svg>
-    More Filters
-  </button>
-
-</div>
-
-
-    <!-- Results -->
-    <p class="text-sm text-gray-500 mb-6">Showing 1 – 4 of 15 results</p>
-
-    <!-- Grid -->
-    <div class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-  <!-- Card 1 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=31" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="md:col-span-2 relative">
+      <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/11/car12.jpg" alt="Main Car"
+           class="rounded-2xl object-cover w-full h-full">
+      <span class="absolute top-4 left-4 bg-[#d9463e] text-white text-sm font-semibold px-3 py-1 rounded-full">Featured</span>
     </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A6 3.5 – New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <!-- icons row -->
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <!-- price row -->
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$58,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
+    <div class="grid grid-cols-2 gap-4">
+      <img src=https://demoapus1.com/boxcar/wp-content/uploads/2023/11/car13.jpg" class="rounded-xl object-cover w-full h-full">
+      <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/11/car10.jpg" class="rounded-xl object-cover w-full h-full">
+      <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/11/car9.jpg" class="rounded-xl object-cover w-full h-full">
+      <img src="https://demoapus1.com/boxcar/wp-content/uploads/2023/11/car9.jpg" class="rounded-xl object-cover w-full h-full">
     </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=32" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A4, 4.5 New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>60 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$250,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=33" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sale</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Ranger Black – 2021</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>250 Miles</span>
-        <span>Petrol</span>
-        <span>Manual</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$180,000</span>
-          <span class="font-bold text-lg text-gray-900">$165,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=34" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Mercedes-Benz, C Class</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$40,000</span>
-          <span class="font-bold text-lg text-gray-900">$35,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-    </div>
-<!-- Grid -->
-    <div class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-  <!-- Card 1 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=31" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A6 3.5 – New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <!-- icons row -->
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <!-- price row -->
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$58,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=32" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A4, 4.5 New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>60 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$250,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=33" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sale</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Ranger Black – 2021</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>250 Miles</span>
-        <span>Petrol</span>
-        <span>Manual</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$180,000</span>
-          <span class="font-bold text-lg text-gray-900">$165,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=34" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Mercedes-Benz, C Class</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$40,000</span>
-          <span class="font-bold text-lg text-gray-900">$35,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-    </div>
-    <!-- Grid -->
-    <div class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-  <!-- Card 1 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=31" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A6 3.5 – New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <!-- icons row -->
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <!-- price row -->
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$58,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=32" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A4, 4.5 New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>60 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$250,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=33" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sale</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Ranger Black – 2021</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>250 Miles</span>
-        <span>Petrol</span>
-        <span>Manual</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$180,000</span>
-          <span class="font-bold text-lg text-gray-900">$165,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=34" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Mercedes-Benz, C Class</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$40,000</span>
-          <span class="font-bold text-lg text-gray-900">$35,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-    </div>
-    <!-- Grid -->
-    <div class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-  <!-- Card 1 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=31" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A6 3.5 – New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <!-- icons row -->
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <!-- price row -->
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$58,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=32" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Audi A4, 4.5 New</h3>
-      <p class="text-sm text-gray-500">3.5 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>60 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <span class="font-bold text-lg text-gray-900">$250,000</span>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=33" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sale</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Ranger Black – 2021</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>250 Miles</span>
-        <span>Petrol</span>
-        <span>Manual</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$180,000</span>
-          <span class="font-bold text-lg text-gray-900">$165,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="rounded-2xl shadow-md border border-gray-200 hover:shadow-lg transition bg-white">
-    <div class="relative">
-      <img src="https://picsum.photos/400/250?random=34" class="rounded-t-2xl w-full h-48 object-cover" alt="car">
-      <span class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Great Price</span>
-      
-    </div>
-    <div class="p-4">
-      <h3 class="font-semibold text-gray-800">Mercedes-Benz, C Class</h3>
-      <p class="text-sm text-gray-500">2.0 D5 PowerPulse Momentum 5dr AWD</p>
-
-      <div class="flex justify-between text-xs mt-3 text-gray-600">
-        <span>100 Miles</span>
-        <span>Petrol</span>
-        <span>Automatic</span>
-      </div>
-
-      <div class="flex justify-between items-center mt-4">
-        <div>
-          <span class="line-through text-sm text-gray-400 mr-2">$40,000</span>
-          <span class="font-bold text-lg text-gray-900">$35,000</span>
-        </div>
-        <a href="#" class="text-sm text-red-600 hover:underline flex items-center gap-1">View Details →</a>
-      </div>
-    </div>
-  </div>
-
-    </div>
-   
   </div>
 </section>
 
+<!-- Description Section -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <hr class="border-gray-700 mb-10">
+
+  <h2 class="text-2xl font-bold mb-6">Description</h2>
+
+  <p class=" leading-relaxed mb-4">
+    Quisque imperdiet dignissim enim dictum finibus. Sed consectetur convallis enim eget laoreet. 
+    Aenean vitae nisl mollis, porta risus vel, dapibus lectus. Etiam ac suscipit eros, eget maximus.
+  </p>
+
+  <p class="leading-relaxed mb-8">
+    Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, 
+    non cursus augue placerat pellentesque. Sed venenatis risus nec felis mollis, in pharetra urna euismod. 
+    Morbi aliquam ut turpis sit amet ultrices. Vestibulum mattis blandit nisl, et tristique elit scelerisque nec. 
+    Fusce eleifend laoreet dui eget aliquet. Ut rutrum risus et nunc pretium scelerisque.
+  </p>
+
+ <div class="flex flex-wrap gap-4 justify-center">
+  <a href="#"
+     class="flex items-center gap-2 px-6 py-3 rounded-lg bg-red-600 text-white hover:bg-red-700 transition font-medium">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+    </svg>
+    Schedule–Test-Drive.Pdf
+  </a>
+
+  <a href="#"
+     class="flex items-center gap-2 px-6 py-3 rounded-lg bg-red-600 text-white hover:bg-red-700 transition font-medium">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+    </svg>
+    Car–Brochure.Pdf
+  </a>
+</div>
 
 
-   <footer class="bg-[#0a0e1a] text-gray-300 pt-16 pb-8 relative">
+  <hr class="border-gray-700 mt-12">
+</section>
+<!-- Features Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 bg-white text-black ">
+  <hr class="border-red-600 mb-10">
+
+  <h2 class="text-2xl font-bold mb-10">Features</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+    
+    <!-- Interior -->
+    <div>
+      <h3 class="font-semibold text-lg mb-4">Interior</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Air Conditioner</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Digital Odometer</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Heater</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Leather Seats</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Panoramic Moonroof</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Tachometer</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Touchscreen Display</li>
+      </ul>
+    </div>
+
+    <!-- Safety -->
+    <div>
+      <h3 class="font-semibold text-lg mb-4">Safety</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Anti-lock Braking</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Brake Assist</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Child Safety Locks</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Driver Air Bag</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Power Door Locks</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Stability Control</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Traction Control</li>
+      </ul>
+    </div>
+
+    <!-- Exterior -->
+    <div>
+      <h3 class="font-semibold text-lg mb-4">Exterior</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Fog Lights Front</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Rain Sensing Wiper</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Rear Spoiler</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Windows – Electric</li>
+      </ul>
+    </div>
+
+    <!-- Comfort & Convenience -->
+    <div>
+      <h3 class="font-semibold text-lg mb-4">Comfort & Convenience</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Android Auto</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Apple CarPlay</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Bluetooth</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> HomeLink</li>
+        <li class="flex items-center gap-2"><span class="text-red-600">✔</span> Power Steering</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr class="border-red-600 mt-12">
+</section>
+<!-- Specs Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 bg-white text-black ">
+
+  <!-- Dimensions & Capacity -->
+  <hr class="border-red-600 mb-10">
+  <h2 class="text-2xl font-bold mb-8">Dimensions &amp; Capacity</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12">
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Length</span><span class="font-semibold">4950mm</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Width</span><span class="font-semibold">2100mm</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Height</span><span class="font-semibold">1776mm</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Width (including mirrors)</span><span class="font-semibold">2140mm</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Wheelbase</span><span class="font-semibold">2580mm</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Gross Vehicle Weight (kg)</span><span class="font-semibold">1850</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Height (including roof rails)</span><span class="font-semibold">1850mm</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Max. Loading Weight (kg)</span><span class="font-semibold">1200</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Luggage Capacity (Seats Up – Litres)</span><span class="font-semibold">450</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Max. Roof Load (kg)</span><span class="font-semibold">380</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Luggage Capacity (Seats Down – Litres)</span><span class="font-semibold">850</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>No. of Seats</span><span class="font-semibold">5</span>
+    </div>
+  </div>
+
+  <!-- Engine and Transmission -->
+  <hr class="border-red-600 my-12">
+  <h2 class="text-2xl font-bold mb-8">Engine and Transmission</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-12">
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Fuel Tank Capacity (Litres)</span><span class="font-semibold">100</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Minimum Kerbweight (kg)</span><span class="font-semibold">150</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Max. Towing Weight – Braked (kg)</span><span class="font-semibold">1000</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Turning Circle – Kerb to Kerb (m)</span><span class="font-semibold">4500</span>
+    </div>
+    <div class="flex justify-between border-b border-gray-200 pb-2">
+      <span>Max. Towing Weight – Unbraked (kg)</span><span class="font-semibold">1200</span>
+    </div>
+  </div>
+
+  <hr class="border-red-600 mt-12">
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-[#0a0e1a] text-gray-300 pt-16 pb-8 relative">
   <div class="max-w-8xl mx-auto px-6 md:px-12">
-
-    <!-- Newsletter -->
     <div class="flex flex-col md:flex-row justify-between items-center mb-12">
       <div class="mb-6 md:mb-0">
         <h3 class="text-2xl font-bold text-white">Join HM Sportscar</h3>
@@ -645,45 +313,20 @@
       </div>
       <form class="flex w-full md:w-auto">
         <input type="email" placeholder="Your email address"
-          class="w-full md:w-96 px-4 py-3 rounded-l-full bg-gray-800 text-white placeholder-gray-400 focus:outline-none">
-       <button type="submit"
-  class="px-6 py-3 bg-[#d9463e] hover:bg-[#b03028] text-white rounded-r-full font-medium transition">
-  Sign Up
-</button>
-
+               class="w-full md:w-96 px-4 py-3 rounded-l-full bg-gray-800 text-white placeholder-gray-400 focus:outline-none">
+        <button type="submit"
+                class="px-6 py-3 bg-[#d9463e] hover:bg-[#b03028] text-white rounded-r-full font-medium transition">
+          Sign Up
+        </button>
       </form>
     </div>
-
-    <!-- Divider -->
     <div class="border-t border-gray-700 mb-12"></div>
-
-    <!-- Links Grid -->
+    <!-- Footer links same as your original -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-
-      <!-- Logo + Description + Socials -->
       <div>
         <img src="assets/img/logo.png" alt="HM Sportscar Logo" class="mb-4">
         <p class="text-gray-400 mb-4">HM Sportscar is your trusted destination for premium cars, financing, and after-sales service.</p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M22 12a10 10 0 10-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0022 12z"/>
-            </svg>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.09 9.09 0 01-2.88 1.1 4.52 4.52 0 00-7.7 4.13 12.84 12.84 0 01-9.33-4.73A4.48 4.48 0 004.52 9a4.48 4.48 0 01-2-.55v.05a4.51 4.51 0 003.63 4.42 4.52 4.52 0 01-2 .07 4.52 4.52 0 004.22 3.14A9.06 9.06 0 012 19.54a12.8 12.8 0 006.92 2"/>
-            </svg>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.6 3H4.4A1.4 1.4 0 003 4.4v15.2A1.4 1.4 0 004.4 21h15.2a1.4 1.4 0 001.4-1.4V4.4A1.4 1.4 0 0019.6 3zm-8 14H9v-7h2.6v7zm-1.3-8.1a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm9.3 8.1h-2.6v-3.7c0-.9-.4-1.5-1.2-1.5-.7 0-1.1.5-1.3 1.1-.1.2-.1.5-.1.8V17h-2.6s.1-6.1 0-6.7h2.6v1c.3-.5.9-1.2 2.2-1.2 1.6 0 2.8 1 2.8 3.1V17z"/>
-            </svg>
-          </a>
-        </div>
       </div>
-
-      <!-- Company -->
       <div>
         <h4 class="text-white font-semibold mb-4">Company</h4>
         <ul class="space-y-2">
@@ -695,8 +338,6 @@
           <li><a href="#" class="hover:text-white">Contact Us</a></li>
         </ul>
       </div>
-
-      <!-- Our Brands -->
       <div>
         <h4 class="text-white font-semibold mb-4">Our Brands</h4>
         <ul class="space-y-2">
@@ -710,8 +351,6 @@
           <li><a href="#" class="hover:text-white">Volkswagen</a></li>
         </ul>
       </div>
-
-      <!-- Contact Information -->
       <div>
         <h4 class="text-white font-semibold mb-4">Contact Information</h4>
         <ul class="space-y-3 text-gray-400">
@@ -721,8 +360,6 @@
         </ul>
       </div>
     </div>
-
-    <!-- Bottom Strip -->
     <div class="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-500">
       <p>© 2025 HM SportsCar.com. All rights reserved.</p>
       <div class="flex space-x-4 mt-4 md:mt-0">
@@ -730,40 +367,28 @@
         <a href="#" class="hover:text-white">Privacy Notice</a>
       </div>
     </div>
-
   </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init({ duration: 1000, once: true });
+</footer>
 
-      // Mobile language dropdown toggle
-
-
- 
-    // Mobile nav toggle
-    const toggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const langToggle = document.getElementById("lang-toggle");
-    const langMenu = document.getElementById("lang-menu");
-    const counters = document.querySelectorAll('.counter');
-    const speed = 100; // lower = faster
-    toggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-     langToggle.addEventListener("click", () => {
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const langToggle = document.getElementById("lang-toggle");
+  const langMenu = document.getElementById("lang-menu");
+  toggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+  langToggle.addEventListener("click", () => {
     langMenu.classList.toggle("hidden");
   });
-
-  // Close menu if clicked outside
   document.addEventListener("click", (e) => {
     if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
       langMenu.classList.add("hidden");
     }
   });
-
-    
-    </script>
- </body>
+</script>
+</body>
 </html>
